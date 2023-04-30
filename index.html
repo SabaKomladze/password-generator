@@ -17,9 +17,31 @@
       <h3>Password Generator</h3>
     </header>
     <section class="input">
-      <input type="text" name="screen" class="screen" />
+      <input type="text" name="screen" class="screen" readonly />
     </section>
-    <section class="main"></section>
+    <section class="main">
+      <div class="characterlength">
+        <h4>Character Length</h4>
+        <span class="length">10</span>
+      </div>
+      <input type="range" class="range" />
+      <div class="checkbox">
+        <input type="checkbox" class="check" />
+        <label class="uppercse option">Include Uppercase Letters</label>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" class="check" />
+        <label class="lowercse option">Include Lowercase Letters</label>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" class="check" />
+        <label class="numbers option">Include Numbers</label>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" class="check" />
+        <label class="symbol option">Include Symbols</label>
+      </div>
+    </section>
     <script src="./script.js"></script>
   </body>
 </html>

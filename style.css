@@ -18,6 +18,7 @@ h3 {
   color: #817d92;
   margin-top: 64px;
 }
+/*SCREEN*/
 .screen {
   background-image: url(./starter-code/assets/images/icon-copy.svg);
   background-repeat: no-repeat;
@@ -28,4 +29,67 @@ h3 {
   margin: 16px auto;
   border: none;
   background-color: #24232c;
+}
+/*MAIN*/
+.main {
+  padding: 0 16px;
+  background-color: #24232c;
+  width: 91.46%;
+  margin: 0 auto;
+}
+/*CHARACTER LENGTH*/
+h4 {
+  font-size: 16px;
+  line-height: 21px;
+  color: #e6e5ea;
+}
+.length {
+  font-size: 24px;
+  line-height: 32px;
+  color: #a4ffaf;
+}
+.characterlength {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*RANGE INPUT*/
+.range {
+  background: #18171f;
+  -webkit-appearance: none;
+  outline: none;
+  width: 84.8%;
+  height: 8px;
+  margin: 18px auto 42px;
+  display: block;
+  position: relative;
+  background: linear-gradient(
+    to right,
+    rgba(164, 255, 175, 1) 0%,
+    rgba(164, 255, 175, 1) 50%,
+    rgba(24, 23, 31, 1) 50%,
+    rgba(24, 23, 31, 1)
+  );
+}
+input[type="range"]::-webkit-slider-thumb {
+  background-color: #e6e5ea;
+  width: 28px;
+  height: 28px;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.checkbox {
+  margin-top: 16px;
+}
+.option {
+  font-size: 16px;
+  line-height: 21px;
+  color: #e6e5ea;
+}
+.check {
+  background: #a4ffaf;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #18171f;
 }
