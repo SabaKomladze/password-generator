@@ -11,7 +11,7 @@ body {
   font-weight: 700;
   background-color: #08070b;
 }
-h3 {
+.password {
   font-size: 16px;
   line-height: 21px;
   text-align: center;
@@ -29,10 +29,16 @@ h3 {
   margin: 16px auto;
   border: none;
   background-color: #24232c;
+  cursor: pointer;
+  font-size: 32px;
+  line-height: 42px;
+  color: #e6e5ea;
+  mix-blend-mode: normal;
+  opacity: 0.25;
 }
 /*MAIN*/
 .main {
-  padding: 0 16px;
+  padding: 0 16px 16px;
   background-color: #24232c;
   width: 91.46%;
   margin: 0 auto;
@@ -81,15 +87,95 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .checkbox {
   margin-top: 16px;
+  align-items: center;
+  display: flex;
 }
 .option {
   font-size: 16px;
   line-height: 21px;
   color: #e6e5ea;
+  margin-left: 20px;
 }
 .check {
-  background: #a4ffaf;
   width: 20px;
   height: 20px;
-  border: 3px solid #18171f;
+  cursor: pointer;
+  -webkit-appearance: none;
+  border: 2px solid #e6e5ea;
+}
+.check:checked {
+  background: #a4ffaf;
+  background-image: url(./starter-code/assets/images/icon-check.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid #a4ffaf;
+}
+.strength {
+  background-color: #18171f;
+  width: 91.46%;
+  height: 56px;
+  margin: 32px auto 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box {
+  width: 10px;
+  height: 28px;
+  border: 2px solid #e6e5ea;
+}
+.medium {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-right: 16px;
+}
+.streng {
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #817d92;
+  padding-left: 16px;
+}
+.med {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: right;
+  color: #e6e5ea;
+  margin-right: 0.5rem;
+}
+.btn {
+  background-color: #a4ffaf;
+  width: 91.46%;
+  height: 56px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #24232c;
+  font-weight: 700;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  background-image: url(./starter-code/assets/images/icon-arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: 65% center;
+}
+.btn:hover {
+  background-color: #24232c;
+  color: #a4ffaf;
+  border: 2px solid #a4ffaf;
+  background-image: url(./starter-code/assets/images/Shape.png);
+  background-repeat: no-repeat;
+  background-position: 65% center;
+}
+@media (min-width: 1440px) {
+  .screen,
+  .main {
+    width: 540px;
+  }
+  .range,
+  .strength,
+  .btn {
+    width: 476px;
+  }
 }
