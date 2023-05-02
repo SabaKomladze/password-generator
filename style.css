@@ -19,10 +19,10 @@ body {
   margin-top: 64px;
 }
 /*SCREEN*/
+.input {
+  position: relative;
+}
 .screen {
-  background-image: url(./starter-code/assets/images/icon-copy.svg);
-  background-repeat: no-repeat;
-  background-position: right 15px center;
   width: 91.46%;
   height: 64px;
   display: block;
@@ -33,8 +33,18 @@ body {
   font-size: 32px;
   line-height: 42px;
   color: #e6e5ea;
+}
+::placeholder {
   mix-blend-mode: normal;
   opacity: 0.25;
+  padding-left: 32px;
+  color: #e6e5ea;
+}
+#copy {
+  position: absolute;
+  top: 22px;
+  right: 8.4%;
+  cursor: pointer;
 }
 /*MAIN*/
 .main {
@@ -69,13 +79,7 @@ h4 {
   margin: 18px auto 42px;
   display: block;
   position: relative;
-  background: linear-gradient(
-    to right,
-    rgba(164, 255, 175, 1) 0%,
-    rgba(164, 255, 175, 1) 50%,
-    rgba(24, 23, 31, 1) 50%,
-    rgba(24, 23, 31, 1)
-  );
+  outline: none;
 }
 input[type="range"]::-webkit-slider-thumb {
   background-color: #e6e5ea;
@@ -84,6 +88,7 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   border-radius: 50%;
   cursor: pointer;
+  box-shadow: -100px 0 0 100px #a4ffaf;
 }
 .checkbox {
   margin-top: 16px;
@@ -168,14 +173,22 @@ input[type="range"]::-webkit-slider-thumb {
   background-repeat: no-repeat;
   background-position: 65% center;
 }
-@media (min-width: 1440px) {
+
+@media (min-width: 768px) {
   .screen,
-  .main {
+  .main,
+  .input {
     width: 540px;
+  }
+  .input {
+    margin: 0 auto;
   }
   .range,
   .strength,
   .btn {
     width: 476px;
+  }
+  #copy {
+    right: 32px;
   }
 }
