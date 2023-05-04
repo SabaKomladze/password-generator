@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./starter-code/assets/images/favicon-32x32.png"
+    />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <header>
+      <h3 class="password">Password Generator</h3>
+    </header>
+    <section class="input">
+      <input
+        type="text"
+        name="screen"
+        class="screen"
+        readonly
+        placeholder="P4$5W0rD!"
+      />
+      <img
+        src="./starter-code/assets/images/icon-copy.svg"
+        alt="copy image"
+        id="copy"
+      />
+    </section>
+    <section class="main">
+      <div class="characterlength">
+        <h4>Character Length</h4>
+        <span class="length">10</span>
+      </div>
+      <div class="slider">
+        <input type="range" class="range" min="5" max="15" value="10" />
+      </div>
+
+      <div class="checkbox">
+        <input type="checkbox" class="check" id="upper" />
+        <label class="uppercse option">Include Uppercase Letters</label>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" class="check" id="lower" />
+        <label class="lowercse option">Include Lowercase Letters</label>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" class="check" id="number" />
+        <label class="numbers option">Include Numbers</label>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" class="check" id="symbol" />
+        <label class="symbol option">Include Symbols</label>
+      </div>
+      <div class="strength">
+        <h3 class="streng">STRENGTH</h3>
+        <div class="medium">
+          <p class="med">MEDIUM</p>
+          <div class="box one" id="one"></div>
+          <div class="box two" id="two"></div>
+          <div class="box three" id="three"></div>
+          <div class="box four" id="four"></div>
+        </div>
+      </div>
+      <button class="btn" type="button">GENERATE</button>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
