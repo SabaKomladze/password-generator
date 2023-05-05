@@ -80,6 +80,7 @@ function strengthPass(){
 function generatePassword() {
   const length = slider.value;
   let charset = "";
+  
   if (upper.checked) {
     charset += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   }
@@ -93,11 +94,15 @@ function generatePassword() {
     charset += "!@#$%^&*()_+";
   }
   let genPassword = "";
+  if(charset.length === 0){
+    return "";
+  }
   for (let i = 0; i < length; i++) {
     const randomIndex = Math.floor(Math.random() * charset.length);
     genPassword += charset[randomIndex];
   }
   return genPassword;
+  
 }
 
 
